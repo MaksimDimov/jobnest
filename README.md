@@ -14,7 +14,7 @@ The simple clone of Linkedin, with ability to log in and using the random user A
 </p>
 
 # Demo
-[Click here]() to try our page
+[Click here](https://maksimdimov.github.io/jobnest/) to try our page
 
 # Authors 
 [Maksim Dimov](https://github.com/MaksimDimov) , [Dale Ruppert](https://github.com/chaos1601)
