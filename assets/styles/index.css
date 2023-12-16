@@ -1,2 +1,137 @@
 @import url(./reset.css);
 
+body {
+    background-color: rgb(241, 240, 240);
+}
+
+.container {
+    width: max(100% - 60px, 1080px);
+    display: flex;
+    margin:0 auto;
+    text-align: center;
+    justify-content: space-between;
+}
+/* header */
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(249, 247, 247);
+    color:rgb(13, 13, 13);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-picture {
+    width: 10%;
+    align-items: center;
+    font-size: 45px;
+    color:rgb(10, 10, 10);
+    /* padding: 0 0 0 15%; */
+}
+
+.input-search {
+    width: 15%;
+    text-align: center;
+    justify-content: center;
+    line-height: 100%;
+    align-items: center;
+    display: flex;
+  
+}
+
+.search {
+    width: 100%;
+    height: 40PX;
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 25px;
+    padding: 3px 10px;
+}
+
+.navigation-list {
+    font-size: 25px;
+    /* text-align: center; */
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    height: 100%;
+    line-height: 80px;
+    width: 60%;
+    /* margin: 0 5%; */
+}
+
+li , .navigation-list , a , ul {
+    /* justify-content: space-between; */
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+    color:rgb(10, 10, 10);
+}
+
+li {
+    margin: 0 2% 0 2%;
+    border-radius: 25px;
+    border: 1px solid rgb(249, 247, 247);
+    background-color: rgb(249, 247, 247);
+    width: 150px;
+    height: 35px;
+    padding: 5px 15px;
+    transition: 0.3s ease;
+}
+
+li:hover a {
+    color:rgb(10, 10, 10);
+}
+
+li:hover {
+    /* box-shadow:  3px 3px 10px  rgba(172, 172, 63, 0.3); */
+    border: 1px solid rgb(10, 10, 10);
+}
+
+.try-premium-li {
+    background-color: rgb(10, 10, 10);
+    color: rgb(249, 247, 247);
+}
+
+li .try-premium-li:hover {
+    border: 1px solid rgb(10, 10, 10);
+    color: rgb(249, 247, 247);
+    cursor: pointer;
+}
+
+.your-profile-link {
+    background-color: rebeccapurple;
+    color: yellow;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.your-profile-link-div {
+    width: 8%;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    /* line-height: 100%; */
+}
+
+/* main */
+
+.justify-content {
+    justify-content: space-between;
+}
+
+.profile-info-div, .people-you-may-know-div{
+    width: 24%;
+}
+
+.profile-posts-div {
+    width: 48%;
+}
+
+.profile-info, .profile-posts, .people-you-may-know {
+    background-color: rgb(249, 247, 247);
+}
