@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Maksym Dimov">
-    <!-- <meta name="description" content="My website"> -->
     <meta name="keywords" content="web developer, web, developer, front-end, html, css, javascript, react, sql">
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/index.css" media="all">
@@ -15,10 +14,121 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="shortcut icon" href="./assets/media/340-3405663_laptop-personal-computer-download-computer-icons-laptop-clipart-png.png" type="image/x-icon">
     <script src="./assets/scripts/index.js" defer></script>
-    <script src="./assets/scripts/classes.js" defer></script>
-    <!-- <title>My contact website</title> -->
+    <!-- <script src="./assets/scripts/classes.js" defer></script> -->
+    <title>JobNest</title>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="logo-picture">
+                <i class="fa-solid fa-j"></i>
+                <i class="fa-solid fa-n"></i>
+            </div>
+            <div class="input-search">
+                <input type="text" class="search" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass magnifying-glass"></i>
+            </div>
+            <ul class="navigation-list">
+                <li><a class="home">Home</a></li>
+                <li><a class="profile">Profile</a></li>
+                <li><a class="connections">Connnections</a></li>
+                <li><a class="interests">interest</a></li>
+                <li class="try-premium-li"><label for="try-premium">Try Premium</label></li>
+            </ul>
+            <div class="your-profile-link-div">
+                <div class="your-profile-link">
+                    <img class="picture-link" src="./assets/media/photo-1535713875002-d1d0cf377fde.avif" alt="profile picture">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="profile-info-div">
+                <div class="profile-info">
+                    <div class="profile-picture-div">
+                            <img class="picture" src="./assets/media/photo-1535713875002-d1d0cf377fde.avif" alt="profile picture">
+                    </div>
+                    <div class="profile-name-div">
+                        <h2 class="profile-name">John Doe</h2>
+                    </div>
+                    <div class="profile-profession-div">
+                        <p class="profile-profession">Software Developer</p>
+                    </div>
+                    <div class="profile-location-div">
+                        Winnipeg, MB
+                    </div>
+                </div>
+                <div class="profile-buttons">
+                    <button class="follow-button">Follow</button>
+                    <button class="message-button">Message</button>
+                </div>
+            </div>
+            <div class="profile-posts-div">
+                <div class="background">
+                    <div class="summary">
+                        <div class="summary-title">
+                            <h2>Summary</h2>
+                        </div>
+                        <div class="summary-content">
+                            <p> Passionate Software Developer | Transforming Ideas into Innovative Solutions
 
+                                Greetings! I am a dedicated software developer with a deep passion for crafting robust and efficient solutions that drive business success. With a keen eye for detail and a commitment to excellence, I excel in translating complex requirements into user-friendly applications.
+                                
+                                Technical Proficiency:
+                                Proficient in a range of programming languages and frameworks, I specialize in [mention specific technologies, e.g., JavaScript, React, Node.js, Python, etc.]. My expertise extends to full-stack development, ensuring end-to-end delivery of high-quality software.
+                                
+                                Problem Solver:
+                                I thrive on challenges and approach problem-solving with a strategic mindset. Whether it's optimizing code for performance or architecting scalable systems, I am dedicated to finding innovative solutions that meet and exceed client expectations.
+                                
+                                Collaborative Team Player:
+                                A firm believer in the power of collaboration, I enjoy working in dynamic teams where ideas flow freely. My communication skills, combined with a passion for knowledge sharing, foster a positive and productive work environment.
+                                
+                                Continuous Learner:
+                                In the ever-evolving landscape of technology, I stay abreast of the latest trends and advancements. My commitment to continuous learning ensures that I bring cutting-edge solutions to every project I undertake.
+                                
+                                Let's Connect:
+                                I am excited about the possibilities that technology offers, and I am open to connecting with fellow professionals, sharing insights, and exploring potential collaborations. Feel free to reach out if you are interested in discussing software development, technology trends, or exploring new opportunities.
+                                
+                                Let's innovate and build the future together!</p>
+                        </div>
+                    </div>
+                    <div class="experience"> 
+                        <div class="experience-title">
+                            <h2>Experience</h2>
+                        </div>
+                        <div class="experience-content">
+                            <p>Software Developer | XYZ Tech Solutions
+                                City, Country | MM/YYYY - Present
+                                
+                                Spearheading the development of innovative web applications using cutting-edge technologies such as React.js and Node.js.
+                                Collaborating with cross-functional teams to define project requirements, scope, and deliverables, ensuring timely and successful project completion.
+                                Optimizing code for performance, scalability, and maintainability, resulting in a 20% improvement in application responsiveness.
+                                Implementing robust testing procedures, reducing the number of post-release issues by 15%.
+                                Junior Software Engineer | ABC Software Solutions
+                                Winnipeg, Canada | 07/1995 - 07/2010    
+                                
+                                Contributed to the development and maintenance of enterprise-level software applications, gaining hands-on experience in Java and Spring Boot.
+                                Assisted in the implementation of a microservices architecture, enhancing the overall system's flexibility and scalability.
+                                Collaborated with senior developers to troubleshoot and debug software applications, ensuring a seamless user experience.
+                                Intern | Tech Innovators Inc.
+                                Winnipeg, Canada | 08/2010 - 12/2020
+                                
+                                Gained valuable experience working on real-world projects, applying theoretical knowledge to practical software development scenarios.
+                                Assisted in the development of feature enhancements and bug fixes, contributing to the overall improvement of existing products.
+                                Participated in team meetings, brainstorming sessions, and code reviews, fostering a collaborative and knowledge-sharing environment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="people-you-may-know-div">
+                <h2 class="people-you-may-know-title"> People you may know</h2>
+                <div class="people-you-may-know">
+                
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
