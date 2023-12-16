@@ -1,98 +1,33 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Maksym Dimov">
-    <meta name="keywords" content="web developer, web, developer, front-end, html, css, javascript, react, sql">
-    <link rel="stylesheet" href="./assets/styles/reset.css">
-    <link rel="stylesheet" href="./assets/styles/index.css" media="all">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,400;0,6..12,500;1,6..12,500&family=Playball&family=Roboto+Mono:wght@300;400;500;600&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="shortcut icon" href="./assets/media/340-3405663_laptop-personal-computer-download-computer-icons-laptop-clipart-png.png" type="image/x-icon">
-    <script src="./assets/scripts/index.js" defer></script>
-    <script src="./assets/scripts/classes.js" defer></script>
-    <title>JobNest</title>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo-picture">
+<html dir = ltr lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Dale Ruppert">
+        <meta name="description" content="Dale Ruppert: Web Developer">
+        <meta name="keywords" content="web developer, web, developer, front-end, html, css, javascript, react, sql">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=PT+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+        <title>JobNest</title>
+        <link rel="stylesheet" href="./assets/styles/index.css" media="all">
+        <script src="./assets/scripts/login.js" defer></script>
+    </head>
+    <body>
+        <div class="login-container-max">
+            <div class="login-logo-picture">
                 <i class="fa-solid fa-j"></i>
                 <i class="fa-solid fa-n"></i>
             </div>
-            <div class="input-search">
-                <input type="text" class="search" placeholder="Search">
-            </div>
-            <ul class="navigation-list">
-                <li><a class="home">Home</a></li>
-                <li><a class="profile">Profile</a></li>
-                <li><a class="connections">Connnections</a></li>
-                <li><a class="interests">interest</a></li>
-                <li class="try-premium-li"><label for="try-premium">Try Premium</label></li>
-            </ul>
-            <div class="your-profile-link-div">
-                <div class="your-profile-link">
-
-                </div>
-            </div>
         </div>
-    </header>
-    <main>
-        <div class="container">
-            <div class="profile-info-div">
-                <div class="profile-info">
-                    <div class="profile-picture-div">
-                        <div class="profile-picture">
-
-                        </div>
-                    </div>
-                    <div class="profile-name-div">
-                        <div class="profile-name">
-
-                        </div>
-                    </div>
-                    <div class="profile-profession-div">
-                        <div class="profile-profession">
-
-                        </div>
-                    </div>
-                    <div class="profile-location-div">
-
-                    </div>
-                </div>
-                <button class="follow-button">Follow</button>
-                <button class="message-button">Message</button>
+        <div class="login-page">
+            <div class="login-container">
+              <h2>Login</h2>
+              <input type="text" id="username" placeholder="Username">
+              <input type="password" id="password" placeholder="Password">
+              <button>Login</button>
+              <p id="error-message" class="error-message"></p>
             </div>
-            <div class="profile-posts-div">
-                <div class="profile-posts">
-
-                </div>
-                <div class="background">
-                    <div class="summary">
-                        <div class="summary-title">
-                            <h2>Summary</h2>
-                        </div>
-                        <div class="summary-content">
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="experience"> 
-                        <div class="experience-title">
-                            <h2>Experience</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="people-you-may-know-div">
-                <div class="people-you-may-know">
-                
-                </div>
-            </div>
-        </div>
-    </main>
-</body>
+          </div>
+    </body>
 </html>
