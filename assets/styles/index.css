@@ -13,7 +13,7 @@ body {
 }
 /* header */
 
-header {
+.home-header {
     height: 80px;
     width: 100%;
     background-color: rgb(249, 247, 247);
@@ -21,6 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .logo-picture {
@@ -28,7 +29,6 @@ header {
     align-items: center;
     font-size: 45px;
     color:rgb(10, 10, 10);
-    /* padding: 0 0 0 15%; */
 }
 
 .input-search {
@@ -49,20 +49,20 @@ header {
     padding: 3px 10px;
 }
 
+.magnifying-glass {
+    position: absolute;
+    margin-left:230px;
+}
+
 .navigation-list {
     font-size: 25px;
-    /* text-align: center; */
     display: flex;
-    /* justify-content: space-between; */
-    /* align-items: center; */
     height: 100%;
     line-height: 80px;
     width: 60%;
-    /* margin: 0 5%; */
 }
 
 li , .navigation-list , a , ul {
-    /* justify-content: space-between; */
     text-decoration: none;
     list-style-type: none;
     display: inline;
@@ -85,7 +85,6 @@ li:hover a {
 }
 
 li:hover {
-    /* box-shadow:  3px 3px 10px  rgba(172, 172, 63, 0.3); */
     border: 1px solid rgb(10, 10, 10);
 }
 
@@ -101,8 +100,7 @@ li .try-premium-li:hover {
 }
 
 .your-profile-link {
-    background-color: rebeccapurple;
-    color: yellow;
+    background-image: url(..media\photo-1535713875002-d1d0cf377fde.avif);
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -115,7 +113,11 @@ li .try-premium-li:hover {
     justify-content: center;
     align-items: center;
     height: 80px;
-    /* line-height: 100%; */
+}
+
+.picture-link {
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 /* main */
@@ -124,14 +126,234 @@ li .try-premium-li:hover {
     justify-content: space-between;
 }
 
+/* profile */
+
+.profile-picture-div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.profile-info-div  {
+    height: fit-content
+}
+
+.profile-info-div div {
+    margin-bottom: 20px;
+}
+
+.picture {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
 .profile-info-div, .people-you-may-know-div{
     width: 24%;
 }
 
 .profile-posts-div {
     width: 48%;
+    background-color: rgb(249, 247, 247);
+    padding: 20px;
+    height: fit-content;
+    border-radius: 7px;
 }
 
-.profile-info, .profile-posts, .people-you-may-know {
+.profile-profession {
+    font-size: 20px;
+}
+
+.profile-info-div, .profile-posts {
     background-color: rgb(249, 247, 247);
+}
+
+.follow-button {
+    background-color: rgb(10, 10, 10);
+    color: rgb(249, 247, 247);
+}
+
+.follow-button, .message-button {
+    padding: 5px 10px;
+    border-radius: 7px;
+    font-size: 25px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.profile-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message-button {
+    border: 1px solid rgb(10, 10, 10);
+}
+
+.follow-button {
+    border: 1px solid rgb(249, 247, 247);
+}
+
+.follow-button:hover {
+    border: 1px solid rgb(10, 10, 10);
+}
+
+.message-button:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+/* profile posts */
+
+.summary-title , .experience-title {
+    text-align: left;
+}
+
+.profile-posts-div div {
+    margin-bottom: 20px;
+}
+
+/* People you may know */
+
+.people-you-may-know {
+    padding: 11px;
+}
+
+.people-you-may-know-card {
+    height: 90px;
+    background-color: rgb(249, 247, 247);
+    margin: 20px 0;
+    padding: 10px;
+    display: flex;
+    border-radius: 7px;
+    justify-content: space-between;
+}
+
+.people-you-may-know-img {
+    border-radius: 50%;
+    width: 17%;
+    height: 100%;
+    display: flex;
+}
+
+.people-you-may-know-text-content {
+    width: 70%;
+}
+
+.people-you-may-know-name, .people-you-may-know-city {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+.people-you-may-know-name {
+    font-size: 20px;
+}
+
+.people-you-may-know-card i  {
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.fa-plus {
+    color: rgb(92, 85, 85);
+}
+
+.people-you-may-know-add-friend {
+    width: 30px;
+    height: 30px;
+}
+
+.people-you-may-know-card i:hover {
+    color: rgb(31, 30, 30);
+}
+
+/* login */
+
+.login-header {
+    height: 80px;
+    width: 100%;
+    /* background-color: rgb(249, 247, 247); */
+    display: flex;
+    text-align: center;
+}
+
+.login-container-max {
+    width:max(100% - 50%, 1080px);
+    margin:0 auto;
+    display : flex;
+    justify-content: center;
+
+}
+
+.login-logo-picture {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: 45px;
+    color:rgb(10, 10, 10);
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    background-color: #f0f0f0; 
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333333;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-container button {
+    background-color: rgb(10, 10, 10);
+    color: rgb(249, 247, 247);
+    border: 1px solid rgb(249, 247, 247);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    border: 1px solid rgb(10, 10, 10);
+}
+
+.error-message {
+    color: #ff0000;
+    margin-top: 10px;
+    font-size: 14px;
 }

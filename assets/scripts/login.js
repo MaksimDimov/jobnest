@@ -9,7 +9,7 @@ const errorMessage = document.getElementById("error-message");
 function login() {
     const storedUsername = "johndoe2516";
     const storedPassword = "S2kw7lt";
-  
+
     const enteredUsername = usernameInput.value;
     const enteredPassword = passwordInput.value;
   
