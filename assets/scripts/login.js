@@ -14,7 +14,7 @@ function login() {
     const enteredPassword = passwordInput.value;
   
     if (enteredUsername === storedUsername && enteredPassword === storedPassword) {
-        window.location.href = "home.html";
+        window.location.href = "title.html";
     } else {
         errorMessage.textContent = "Incorrect username or password";
     }
