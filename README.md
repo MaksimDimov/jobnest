@@ -1,6 +1,10 @@
 # jobnest
 The simple clone of Linkedin, with ability to log in and using the random user API
 
+User name: johndoe2516;
+
+Password: S2kw7lt;
+
 ## Functionality 
 1) log in page that use lical storage to contain the credentials
 
