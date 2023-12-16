@@ -13,7 +13,7 @@ body {
 }
 /* header */
 
-header {
+.home-header {
     height: 80px;
     width: 100%;
     background-color: rgb(249, 247, 247);
@@ -191,6 +191,22 @@ li .try-premium-li:hover {
     align-items: center;
 }
 
+.message-button {
+    border: 1px solid rgb(10, 10, 10);
+}
+
+.follow-button {
+    border: 1px solid rgb(249, 247, 247);
+}
+
+.follow-button:hover {
+    border: 1px solid rgb(10, 10, 10);
+}
+
+.message-button:hover {
+    background-color: rgb(235, 235, 235);
+}
+
 /* profile posts */
 
 .summary-title , .experience-title {
@@ -265,11 +281,35 @@ li .try-premium-li:hover {
 
 /* login */
 
+.login-header {
+    height: 80px;
+    width: 100%;
+    /* background-color: rgb(249, 247, 247); */
+    display: flex;
+    text-align: center;
+}
+
+.login-container-max {
+    width:max(100% - 50%, 1080px);
+    margin:0 auto;
+    display : flex;
+    justify-content: center;
+
+}
+
+.login-logo-picture {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: 45px;
+    color:rgb(10, 10, 10);
+}
+
 .login-page {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 88vh;
     background-color: #f0f0f0; 
 }
 
@@ -301,14 +341,15 @@ li .try-premium-li:hover {
 }
 
 .login-container button {
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: rgb(10, 10, 10);
+    color: rgb(249, 247, 247);
+    border: 1px solid rgb(249, 247, 247);
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .login-container button:hover {
-    background-color: #0056b3; 
+    border: 1px solid rgb(10, 10, 10);
 }
 
 .error-message {
